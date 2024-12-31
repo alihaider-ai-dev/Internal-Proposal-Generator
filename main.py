@@ -2,6 +2,7 @@ import anthropic
 import streamlit as st
 from bs4 import BeautifulSoup
 import requests
+import os
 from dotenv import load_dotenv
 
 load_dotenv()
