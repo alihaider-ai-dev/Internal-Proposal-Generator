@@ -64,12 +64,12 @@ Instructions:
 - never use placeholders as these will be sent in the exact way you put them in. Examples of placeholders would be: [your link], [Your Name]
 
     <template>
-[Greeting in client’s local language using the available Client Name/Company Name (if available)]
-I’ve closely reviewed your project details, and I’m certain that my team and I at AIDevStudio.ai are ideally positioned to deliver exceptional results for [Simplified Project Title]. We’ve just concluded a similar project in [relevant industry or sector], allowing us to hit the ground running with informed strategies and the right AI libraries & frameworks. Happy to elaborate on these when we get to chat.
-I also understand you’re busy and likely receiving 10s of applications from other freelancers/agencies, but here’s why a chat with me is worth your time:
+[Greeting in client's local language using the available Client Name/Company Name (if available)]
+I've closely reviewed your project details, and I'm certain that my team and I at AIDevStudio.ai are ideally positioned to deliver exceptional results for [Simplified Project Title]. We've just concluded a similar project in [relevant industry or sector], allowing us to hit the ground running with informed strategies and the right AI libraries & frameworks. Happy to elaborate on these when we get to chat.
+I also understand you're busy and likely receiving 10s of applications from other freelancers/agencies, but here's why a chat with me is worth your time:
 :briefcase: Business-minded: We understand AI Software products unit economics and will advise on the most cost-effective, secure and scalable AI tech stack you should use while keeping your best interests at heart.
-:moneybag: Competitive pricing: As we’ve built many AI products already, that makes us resourceful and efficient.
-:rocket: Fast delivery and clear communication: We work weekdays and weekends to meet week-long deadlines, not months. We’re organized and communicate clearly—no micromanagement needed.
+:moneybag: Competitive pricing: As we've built many AI products already, that makes us resourceful and efficient.
+:rocket: Fast delivery and clear communication: We work weekdays and weekends to meet week-long deadlines, not months. We're organized and communicate clearly—no micromanagement needed.
 :arrows_counterclockwise: 360° service: We provide full-stack solutions from UX/UI product design to backend development to the latest LLM Agentic techniques, frontend, QA, LLM observability and deployment. No need for additional hires.
 :movie_camera: Some of my recent clients interviews:
 
@@ -85,7 +85,7 @@ I also understand you’re busy and likely receiving 10s of applications from ot
 
 - https://youtu.be/sc3I4q8iJSk?si=nc7acuYzK_sQSEQH (Mr Mohammed Baadhim, Sr. Manager at Arweqah Social Incubator)
 
-:memo: Finally, to prepare a detailed Software Requirements Specification (SRS) document for you with an accurate quote, we’ll need to set up a meeting and discuss the project details in detail
+:memo: Finally, to prepare a detailed Software Requirements Specification (SRS) document for you with an accurate quote, we'll need to set up a meeting and discuss the project details in detail
 :telephone_receiver: You can send me a message here or schedule a meeting using my calendar link here: https://cal.com/aidevstudio/30mins .
 Looking forward to speaking soon,
 Ahmed
@@ -96,10 +96,6 @@ P.S: Please consider the attached price as a placeholder until we discuss the sp
 
 # Function to scrape job description with proper error handling
 def scrape_job_description(url: str) -> tuple[bool, str]:
-    """
-    Scrape job description from URL with enhanced error handling
-    Returns: (success: bool, content: str)
-    """
     try:
         with st.spinner("🔍 Fetching job description..."):
             response = requests.get(url, timeout=10)
@@ -113,7 +109,6 @@ def scrape_job_description(url: str) -> tuple[bool, str]:
 
 # Function to generate proposal with progress tracking
 def generate_proposal(template: str, job_description: str) -> str:
-    """Generate personalized proposal using Claude"""
     try:
         with st.status("🤖 Generating your proposal...", expanded=True) as status:            
             response = st.session_state.client.messages.create(
@@ -194,12 +189,11 @@ if st.button("✨ Generate Proposal", type="primary", disabled=not job_descripti
                     unsafe_allow_html=True
                 )
             
-            # Copy button with JavaScript
+            # Updated copy button with corrected JavaScript
             st.components.v1.html(
                 f"""
                 <div class="copy-button">
-                    <textarea id="proposal-text" style="display: none;">{proposal}</textarea>
-                    <button onclick="copyProposal()" class="copy-btn">
+                    <button onclick="copyToClipboard()" class="copy-btn">
                         📋 Copy to Clipboard
                     </button>
                 </div>
@@ -222,16 +216,17 @@ if st.button("✨ Generate Proposal", type="primary", disabled=not job_descripti
                     }}
                 </style>
                 <script>
-                    function copyProposal() {{
-                        const text = document.getElementById("proposal-text");
-                        text.select();
-                        document.execCommand("copy");
-                        
-                        const btn = document.querySelector(".copy-btn");
-                        btn.innerHTML = "✅ Copied!";
-                        setTimeout(() => {{
-                            btn.innerHTML = "📋 Copy to Clipboard";
-                        }}, 2000);
+                    function copyToClipboard() {{
+                        const proposalText = `{proposal.replace("`", "\\`").replace("'", "\\'")}`;
+                        navigator.clipboard.writeText(proposalText).then(function() {{
+                            const btn = document.querySelector(".copy-btn");
+                            btn.innerHTML = "✅ Copied!";
+                            setTimeout(() => {{
+                                btn.innerHTML = "📋 Copy to Clipboard";
+                            }}, 2000);
+                        }}).catch(function(err) {{
+                            console.error('Failed to copy:', err);
+                        }});
                     }}
                 </script>
                 """,
