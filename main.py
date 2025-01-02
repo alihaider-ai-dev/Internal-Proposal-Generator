@@ -58,6 +58,11 @@ if "processing" not in st.session_state:
 
 # Default template
 default_template = """
+Using the template provided, generate a hyper-personalized proposal based on the following job description: 
+Instructions:
+- never replace the links in case studies with hyperlinks or words, keep it as is
+- never use placeholders as these will be sent in the exact way you put them in. Examples of placeholders would be: [your link], [Your Name]
+
     <template>
 [Greeting in client’s local language using the available Client Name/Company Name (if available)]
 I’ve closely reviewed your project details, and I’m certain that my team and I at AIDevStudio.ai are ideally positioned to deliver exceptional results for [Simplified Project Title]. We’ve just concluded a similar project in [relevant industry or sector], allowing us to hit the ground running with informed strategies and the right AI libraries & frameworks. Happy to elaborate on these when we get to chat.
