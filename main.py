@@ -130,11 +130,8 @@ def generate_proposal(template: str, job_description: str) -> str:
 
 # Header
 col1, col2 = st.columns([1, 4])
-with col1:
-    st.image("Logo.png", width=200)
-with col2:
-    st.title("✨ AI-Powered Proposal Generator")
-    st.markdown("*Transform job descriptions into persuasive proposals in seconds*")
+st.title("✨ AI-Powered Proposal Generator")
+st.markdown("*Transform job descriptions into persuasive proposals in seconds*")
 
 # Main interface with tabs
 tab1, tab2 = st.tabs(["📝 Direct Input", "🔗 URL Input"])
