@@ -115,9 +115,7 @@ def scrape_job_description(url: str) -> tuple[bool, str]:
 def generate_proposal(template: str, job_description: str) -> str:
     """Generate personalized proposal using Claude"""
     try:
-        with st.status("🤖 Generating your proposal...", expanded=True) as status:
-            status.write("Analyzing job description...")
-            
+        with st.status("🤖 Generating your proposal...", expanded=True) as status:            
             response = st.session_state.client.messages.create(
                 model="claude-3-5-sonnet-20240620",
                 messages=[{
