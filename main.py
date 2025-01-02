@@ -72,12 +72,19 @@ I also understand you’re busy and likely receiving 10s of applications from ot
 :rocket: Fast delivery and clear communication: We work weekdays and weekends to meet week-long deadlines, not months. We’re organized and communicate clearly—no micromanagement needed.
 :arrows_counterclockwise: 360° service: We provide full-stack solutions from UX/UI product design to backend development to the latest LLM Agentic techniques, frontend, QA, LLM observability and deployment. No need for additional hires.
 :movie_camera: Some of my recent clients interviews:
-https://youtu.be/BcigeX3i-dk?si=sTAgQZZn0KXIzVaM (Mr Michael Galliker, CEO of Regulatory Globe GmbH)
-https://www.youtube.com/watch?v=-W7qbUGwlXE (Mr Christian Vancea, CEO of Essentio GmbH)
-https://www.youtube.com/watch?v=S8WLRkpTLiQ (Dr. Walsh, Owner of Metabolic Fitness Pro)
-https://youtu.be/xJKDFZO-V10?si=TL8DJxjmP6dC3NWT  (Mr Scott Zerby, Mayor & Council at shorewood city, Minnesota)
-https://www.youtube.com/watch?v=Sq1u1WpWFHo (Mrs. Ingrid Paulson, Founder/CEO of datym.ai)
-https://youtu.be/sc3I4q8iJSk?si=nc7acuYzK_sQSEQH (Mr Mohammed Baadhim, Sr. Manager at Arweqah Social Incubator)
+
+- https://youtu.be/BcigeX3i-dk?si=sTAgQZZn0KXIzVaM (Mr Michael Galliker, CEO of Regulatory Globe GmbH)
+
+- https://www.youtube.com/watch?v=-W7qbUGwlXE (Mr Christian Vancea, CEO of Essentio GmbH)
+
+- https://www.youtube.com/watch?v=S8WLRkpTLiQ (Dr. Walsh, Owner of Metabolic Fitness Pro)
+
+- https://youtu.be/xJKDFZO-V10?si=TL8DJxjmP6dC3NWT  (Mr Scott Zerby, Mayor & Council at shorewood city, Minnesota)
+
+- https://www.youtube.com/watch?v=Sq1u1WpWFHo (Mrs. Ingrid Paulson, Founder/CEO of datym.ai)
+
+- https://youtu.be/sc3I4q8iJSk?si=nc7acuYzK_sQSEQH (Mr Mohammed Baadhim, Sr. Manager at Arweqah Social Incubator)
+
 :memo: Finally, to prepare a detailed Software Requirements Specification (SRS) document for you with an accurate quote, we’ll need to set up a meeting and discuss the project details in detail
 :telephone_receiver: You can send me a message here or schedule a meeting using my calendar link here: https://cal.com/aidevstudio/30mins .
 Looking forward to speaking soon,
