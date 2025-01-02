@@ -35,7 +35,6 @@ st.markdown("""
         border-radius: 5px;
         padding: 20px;
         margin: 20px 0;
-        background-color: #fff;
     }
     .copy-button {
         display: flex;
