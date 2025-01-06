@@ -66,7 +66,7 @@ Instructions:
 - Return the Proposal Directly without any Prefix or Postfix Phrases or Text.
 
     <template>
-[Greeting in client’s local language using the available Client Name/Company Name (if available)]
+Greeting in client’s local language using the available Client Name/Company Name (if available)
 I’ve closely reviewed your project details, and I’m certain that my team and I at AIHealthStudio.ai are ideally positioned to deliver exceptional results for [Project name]. We’ve just concluded a project in [same industry or sector of the project or job], allowing us to hit the ground running with the right libraries & frameworks. Happy to elaborate on these when we get to chat.
 I also understand you’re busy and likely receiving 10s of applications from other freelancers/agencies, but here’s why a chat with me is worth your time:
 💼 Business-minded: We understand AI Software products unit economics and will advise on the most cost-effective, secure and scalable AI tech stack you should use while keeping your best interests at heart.
